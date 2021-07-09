@@ -1,16 +1,23 @@
 {
-  "name": "rijndael",
+  "name": "rijndael-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "implementation of the rijndael encryption algorithm.",
   "main": "index.js",
+  "engines": {
+    "node": ">=14.17.3",
+    "npm": ">=6.14.13"
+  },
   "scripts": {
     "dev": "ts-node -r tsconfig-paths/register src/example.ts",
     "test": "jest --forceExit --detectOpenHandles --coverage --verbose",
     "make-badges": "istanbul-badges-readme"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Nestor Cortina",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nexckycort/rijndael-nodejs"
+  },
   "devDependencies": {
     "@microsoft/tsdoc": "^0.13.2",
     "@tsconfig/node14": "^1.0.1",
