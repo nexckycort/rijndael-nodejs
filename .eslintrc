@@ -3,11 +3,7 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "eslint-plugin-tsdoc"
-  ],
   "rules": {
-    "tsdoc/syntax": "warn",
     "@typescript-eslint/space-before-function-paren": "off"
   }
 }
