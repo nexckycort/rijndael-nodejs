@@ -11,7 +11,7 @@ const rijndael = (saltBytes: Buffer, key: string, password: string): string => {
   rijAlg.Key = rfc.GetBytes(rijAlg.KeySize / 8)
   rijAlg.IV = rfc.GetBytes(rijAlg.BlockSize / 8)
 
-  const cipher = crypto.createCipheriv('aes256', rijAlg.Key, rijAlg.IV)
+  const cipher = crypto.createCipheriv('AES-256-GCM', rijAlg.Key, rijAlg.IV)
 
   const encrypted = Buffer.concat([cipher.update(password), cipher.final()])
 
