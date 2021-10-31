@@ -1,7 +1,7 @@
 import crypto from 'crypto'
 
-import Rfc2898DeriveBytes from 'Rfc2898DeriveBytes'
-import RijndaelManaged from 'RijndaelManaged'
+import Rfc2898DeriveBytes from './Rfc2898DeriveBytes'
+import RijndaelManaged from './RijndaelManaged'
 
 const rijndael = (saltBytes: Buffer, key: string, password: string): string => {
   const rfc = new Rfc2898DeriveBytes(key, saltBytes)

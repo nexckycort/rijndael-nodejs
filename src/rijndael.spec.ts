@@ -8,7 +8,6 @@ describe('rijndael', () => {
     const password = 'test'
 
     const encryptRijndael = rijndael(saltBytes, key, password)
-    console.log(encryptRijndael)
 
     expect(encryptRijndaelTest).toEqual(encryptRijndael)
     done()
