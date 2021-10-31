@@ -8,7 +8,7 @@ Implementation of the rijndael encryption algorithm.
 
 ## Install
 
-```
+```npm
 npm install @nexckycort/rijndael-nodejs
 ```
 
