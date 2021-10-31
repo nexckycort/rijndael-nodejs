@@ -1,26 +1,38 @@
 {
-  "name": "rijndael-nodejs",
-  "version": "1.0.0",
+  "name": "@nexckycort/rijndael-nodejs",
+  "version": "1.0.1",
   "description": "implementation of the rijndael encryption algorithm.",
-  "main": "rijndael.ts",
+  "main": "dist/rijndael.js",
   "engines": {
     "node": ">=14.17.3",
     "npm": ">=6.14.13"
   },
   "private": false,
   "scripts": {
+    "build": "rimraf dist && tsc",
     "test": "jest --forceExit --detectOpenHandles --coverage --verbose",
     "lint": "eslint . --ext .ts --fix",
     "format": "prettier --write src",
     "make-badges": "istanbul-badges-readme",
     "prepare": "husky install"
   },
-  "author": "Nestor Cortina",
-  "license": "ISC",
+  "keywords": [
+    "rijndael",
+    "typescript",
+    "javascript",
+    "node",
+    "package"
+  ],
+  "author": "Nestor Cortina <nexckycort@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/nexckycort/rijndael-nodejs"
   },
+  "bugs": {
+    "url": "https://github.com/nexckycort/rijndael-nodejs/issues"
+  },
+  "homepage": "https://github.com/nexckycort/rijndael-nodejs#readme",
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
@@ -38,6 +50,7 @@
     "jest": "^27.3.1",
     "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.11.0",
