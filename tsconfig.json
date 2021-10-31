@@ -2,10 +2,14 @@
   "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     "baseUrl": "src",
+    "declaration": true,
     "paths": {
       "Rfc2898DeriveBytes": ["Rfc2898DeriveBytes"],
       "rijndael": ["rijndael"],
       "RijndaelManaged": ["RijndaelManaged"]
-    }
-  }
+    },
+    "outDir": "dist"
+  },
+  "include": ["src/*"],
+  "exclude" : ["src/*.spec.ts"]
 }
