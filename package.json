@@ -1,6 +1,6 @@
 {
   "name": "@nexckycort/rijndael-nodejs",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "implementation of the rijndael encryption algorithm.",
   "main": "dist/rijndael.js",
   "engines": {
