@@ -5,11 +5,13 @@ describe('rijndael', () => {
   it('rijndael', (done) => {
     const saltBytes = Buffer.from('salttest', 'ascii')
     const key = 'keytest'
-    const password = 'test'
 
-    const encryptRijndael = rijndael(saltBytes, key, password)
+    const encryptRijndael = rijndael(saltBytes, key)
 
-    expect(encryptRijndaelTest).toEqual(encryptRijndael)
+    const text = 'test'
+    const encryptText = encryptRijndael(text)
+
+    expect(encryptRijndaelTest).toEqual(encryptText)
     done()
   })
 })
