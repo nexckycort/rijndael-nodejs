@@ -20,7 +20,6 @@ import rijndael from '@nexckycort/rijndael-nodejs'
 const saltBytes = Buffer.from('salttest', 'ascii')
 const key = 'keytest'
 const password = 'test'
-const = rijndael
 
 const encryptRijndael = rijndael(saltBytes, key, password)
 ```
